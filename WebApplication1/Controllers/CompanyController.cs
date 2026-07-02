@@ -6,7 +6,7 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class CompanyController : ControllerBase
     {
-    [HttpGet]
+        [HttpGet]
         [Route("api/company")]
         public IActionResult GetCompany()
         {
@@ -19,4 +19,5 @@ namespace WebApplication1.Controllers
             };
             return Ok(company);
         }
+    }
 }
